@@ -1,2 +1,2 @@
-# mywebsite-project
+# myfirstwebsite-tech
 this is my first repository
