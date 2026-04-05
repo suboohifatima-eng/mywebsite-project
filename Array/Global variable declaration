@@ -1,0 +1,27 @@
+package Array;
+
+
+public class Global_Var {
+
+    static int val = 100;  // global (class) variable
+
+    public static void main(String[] args) {
+        System.out.println("hey");
+
+        int x = 60;
+
+        System.out.println(val);
+        fun(x);
+        System.out.println(val);
+    }
+
+    public static void fun(int x) {
+        int a = 90; // local variable (unused, but fine)
+
+        System.out.println(x);
+
+        val = 120; // modifying global variable
+        System.out.println(val);
+    }
+}
+
