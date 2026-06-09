@@ -1,0 +1,74 @@
+body{
+    background-color: rgb(42, 128, 165);
+}
+h1{
+    color: aquamarine;
+}
+
+/* Polished form styles */
+*{box-sizing:border-box}
+body{
+    margin:0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    background: linear-gradient(180deg, #2a809f 0%, #17607b 100%);
+    color:#07303d;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height:100vh;
+}
+.container{
+    width:100%;
+    max-width:720px;
+    padding:20px;
+}
+.user-form{
+    background:#fff;
+    border-radius:12px;
+    padding:22px;
+    box-shadow:0 12px 30px rgba(2,18,26,0.18);
+}
+.user-form h1{
+    margin:0 0 18px 0;
+    font-size:20px;
+    text-align:center;
+    color:#0e628a;
+}
+.form-row{
+    display:flex;
+    gap:12px;
+    align-items:center;
+    margin-bottom:12px;
+}
+.form-row label{
+    width:120px;
+    font-weight:600;
+    color:#054a63;
+}
+.form-row input,
+.form-row select,
+.form-row textarea{
+    flex:1;
+    padding:10px 12px;
+    font-size:14px;
+    border:1px solid #d7e6ee;
+    border-radius:8px;
+    background:#fff;
+}
+.form-row input[type="file"]{padding:6px}
+.form-actions{ text-align:center; margin-top:18px }
+button{
+    background:#0e83b5;
+    color:#fff;
+    border:none;
+    padding:10px 22px;
+    border-radius:10px;
+    font-weight:700;
+    cursor:pointer;
+}
+button:hover{filter:brightness(.95)}
+
+@media (max-width:520px){
+    .form-row{flex-direction:column;align-items:stretch}
+    .form-row label{width:100%;margin-bottom:6px}
+}
